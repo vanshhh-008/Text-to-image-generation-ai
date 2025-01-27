@@ -125,7 +125,7 @@ export const Generateform = ({
     toast.info("Generating image...");
    
     try {
-      const response = await axios.post("http://localhost:4000/generate-image", {
+      const response = await axios.post("https://text-to-image-generation-ai-backend.onrender.com/generate-image", {
         prompt: post.prompt,
       });
 
